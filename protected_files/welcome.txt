@@ -1,0 +1,2 @@
+Hey guys, this is a CNS mini project on File Tampering Detector.
+This file demonstrates real-time file integrity monitoring and baseline verification.

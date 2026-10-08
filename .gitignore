@@ -1,0 +1,55 @@
+# ── Python ──────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+
+# ── Environment / secrets ────────────────────────────────────────────────────
+.env
+*.env
+!.env.example
+
+# ── Database ─────────────────────────────────────────────────────────────────
+data/*.db
+data/*.db-shm
+data/*.db-wal
+*.sqlite
+*.sqlite3
+!data/.gitkeep
+
+# ── Logs ─────────────────────────────────────────────────────────────────────
+logs/*.log
+!logs/.gitkeep
+
+# ── Node / Frontend ──────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/.vite/
+.npm/
+
+# ── IDE / OS ─────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Test artifacts ────────────────────────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml

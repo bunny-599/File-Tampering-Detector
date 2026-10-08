@@ -1,0 +1,12 @@
+.register-card { margin-bottom: 0; }
+.panel-title { font-size: 14px; font-weight: 600; margin-bottom: 14px; }
+
+.register-form {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.register-form input { flex: 1; }
+.register-form button { white-space: nowrap; height: 38px; }
+
+.action-cell { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }

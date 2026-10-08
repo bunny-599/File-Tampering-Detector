@@ -1,0 +1,88 @@
+.mod-card { max-width: 720px; margin-bottom: 20px; }
+.mod-description {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+.mod-form { display: flex; flex-direction: column; gap: 16px; }
+
+.file-info-box {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 12px;
+}
+.info-row > span:first-child {
+  color: var(--text-muted);
+  white-space: nowrap;
+  font-weight: 500;
+  min-width: 120px;
+}
+
+.active-session {
+  background: var(--accent-dim);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+.session-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.session-badge {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: .5px;
+}
+.countdown {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--green);
+}
+.countdown--urgent { color: var(--red); animation: blink 1s step-start infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+
+.session-info {
+  color: var(--text-muted);
+  font-size: 12px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+.session-details { display: flex; flex-direction: column; gap: 6px; }
+
+.workflow-card { max-width: 720px; }
+.workflow-steps {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+.workflow-steps li { line-height: 1.5; }
+.workflow-steps strong, .workflow-steps em { color: var(--text-primary); }
+
+.warning-box {
+  background: var(--yellow-dim);
+  border: 1px solid var(--yellow);
+  color: var(--orange);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  font-size: 12px;
+  line-height: 1.5;
+}

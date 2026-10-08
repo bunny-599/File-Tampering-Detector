@@ -1,0 +1,48 @@
+.alerts-list { display: flex; flex-direction: column; gap: 12px; }
+
+.alert-card { padding: 0; overflow: hidden; transition: border-color .15s; }
+.alert-card--open     { border-left: 4px solid var(--red); }
+.alert-card--resolved { border-left: 4px solid var(--green); }
+
+.alert-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+.alert-header:hover { background: var(--bg-hover); }
+
+.alert-left { display: flex; align-items: center; gap: 12px; }
+.alert-icon { font-size: 20px; }
+.alert-type { font-weight: 600; font-size: 14px; }
+.alert-time { font-size: 11px; color: var(--text-muted); margin-top: 2px; }
+
+.alert-body {
+  border-top: 1px solid var(--border);
+  padding: 16px;
+  background: var(--bg-primary);
+}
+
+.alert-message {
+  font-family: 'Consolas', monospace;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--text-muted);
+  white-space: pre-wrap;
+  word-break: break-all;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin-bottom: 12px;
+}
+
+.resolve-btn { font-size: 12px; }
+
+.empty-alerts {
+  text-align: center;
+  padding: 48px;
+  color: var(--text-muted);
+}
+.empty-icon { font-size: 40px; margin-bottom: 12px; }
